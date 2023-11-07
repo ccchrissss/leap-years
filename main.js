@@ -6,9 +6,12 @@
 // Tested years are in range 1600 ≤ year ≤ 4000.
 
 function leapYears(year) {
+
   if (year % 400 === 0) return true
   else if (year % 100 === 0) return false
   else if (year % 4 === 0) return true
+  else return false
+
 }
 
 console.log(leapYears(1))
@@ -26,3 +29,4 @@ console.log(leapYears(400))
 // if year is divisible by 400 return true
 // else if year is divisible  by 100 return false
 // else if year is divisible by 4 return true
+// else return false
